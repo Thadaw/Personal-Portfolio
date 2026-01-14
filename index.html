@@ -14,6 +14,15 @@
       <div class="nav-logo">
         <p class="nav_name">Thadaw</p>
       </div>
+      
+      <!-- Hamburger Menu Button -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+      <!-- Navigation Menu -->
       <div class="nav_menu" id="myNavMenu">
         <ul class="nav_menu_list">
           <li class="nav_list">
@@ -34,14 +43,12 @@
           </li>
         </ul>
       </div>
+      
       <div class="mode">
         <div class="moon-sun" id="toggle-switch">
           <i class="fa fa-moon" id="moon"></i>
           <i class="fa fa-sun" id="sun"></i>
         </div>
-      </div>
-      <div class="nav-menu-btn">
-          <i class="uli uli-bars" onclick="myMenuFunction()"></i>
       </div>
     </nav>
     <main class="wrapper">
@@ -139,20 +146,68 @@
           <h1>Projects</h1>
         </div>
         <div class="project-container">
-          <div class="project-box">
-            <i class="uil uil-briefcase-alt"></i>
-              <h3>Completed</h3>
-              <label>5+ Projects completed</label>
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./image/project1.jpg" alt="Project 1" onerror="this.src='./image/placeholder.jpg'">
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Website</h3>
+              <p>A full-stack e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+              <div class="tech-stack">
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+                <span class="tech">JavaScript</span>
+                <span class="tech">Node.js</span>
+                <span class="tech">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn demo-btn">Live Demo</a>
+                <a href="#" target="_blank" class="btn code-btn">Source Code</a>
+              </div>
+            </div>
           </div>
-           <div class="project-box">
-            <i class="uil uil-users-alt"></i>
-              <h3>Clients</h3>
-              <label>70% Happy Clients</label>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./image/project2.jpg" alt="Project 2" onerror="this.src='./image/placeholder.jpg'">
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <p>A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.</p>
+              <div class="tech-stack">
+                <span class="tech">React</span>
+                <span class="tech">Firebase</span>
+                <span class="tech">CSS3</span>
+                <span class="tech">Material-UI</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn demo-btn">Live Demo</a>
+                <a href="#" target="_blank" class="btn code-btn">Source Code</a>
+              </div>
+            </div>
           </div>
-           <div class="project-box">
-            <i class="uil uil-award"></i>
-              <h3>Web development</h3>
-              <label>2+ Years of experience</label>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./image/project3.jpg" alt="Project 3" onerror="this.src='./image/placeholder.jpg'">
+            </div>
+            <div class="project-content">
+              <h3>Weather Dashboard</h3>
+              <p>An interactive weather dashboard that displays current weather conditions and forecasts using real-time API data.</p>
+              <div class="tech-stack">
+                <span class="tech">JavaScript</span>
+                <span class="tech">API</span>
+                <span class="tech">Chart.js</span>
+                <span class="tech">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn demo-btn">Live Demo</a>
+                <a href="#" target="_blank" class="btn code-btn">Source Code</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

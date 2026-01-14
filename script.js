@@ -1,13 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function myMenuFunction(){
-    var menuBtn = document.getElementById("myNavMenu");
+  // Hamburger menu functionality
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('myNavMenu');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-    if (menuBtn.className === "nav_menu") {
-      menuBtn.className += " responsive";
-    } else {
-      menuBtn.className = "nav_menu";
+  // Toggle hamburger menu
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking on a link
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
     }
-  }
+  });
+
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 900) {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
 
   const body = document.querySelector("body"),
     toggleSwitch = document.getElementById("toggle-switch");
@@ -88,5 +113,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  window.addEventListener("scroll", scrollActive);
-});
+ window.addEventListener("scroll", scrollActive)
+ });
