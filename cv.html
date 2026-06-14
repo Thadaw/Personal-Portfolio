@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px;
-      font-family: Arial, sans-serif;
-    }
-    p {
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 30px;
+            background:#222;
+            color:white;
+        }
+
+        .btn{
+            background:#007bff;
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            border-radius:5px;
+        }
+
+        .pdf-container{
+            width:100%;
+            height:calc(100vh - 70px);
+        }
+
+        iframe{
+            width:100%;
+            height:100%;
+            border:none;
+        }
+    </style>
 </head>
 <body>
-  <p> Coming soon</p>
+
+    <div class="header">
+        <h2>Roshan Thapa - CV</h2>
+        <a href="assets/ROSHAN THAPA.pdf" download class="btn">
+            Download CV
+        </a>
+    </div>
+
+    <div class="pdf-container">
+        <iframe src="assets/ROSHAN THAPA.pdf"></iframe>
+    </div>
+
 </body>
 </html>
