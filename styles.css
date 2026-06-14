@@ -97,7 +97,7 @@ nav {
   margin-inline: 20px;
 }
 
-/* Hamburger Menu Styles */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -114,7 +114,6 @@ nav {
   transition: 0.3s;
 }
 
-/* Hamburger Animation */
 .hamburger.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -506,7 +505,7 @@ box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   width: 80%;
 }
 
-.skill-per.python{
+.skill-per.mysql{
   animation-delay: 0.1s;
   width: 40%;
 }

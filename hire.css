@@ -1,0 +1,169 @@
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #4070f4;
+  --accent-2: #22d3ee;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* PAGE */
+.hire-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+/* CARD */
+.hire-card {
+  max-width: 900px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 22px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+/* BADGE */
+.hire-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(64, 112, 244, 0.10);
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* TITLE */
+.hire-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+/* SUBTITLE */
+.hire-subtitle {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
+/* DESCRIPTION */
+.hire-description {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* SKILLS */
+.hire-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.hire-skills span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.hire-skills span:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+/* SECTION */
+.hire-section {
+  margin-bottom: 25px;
+  text-align: left;
+  background: #fafafa;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.hire-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hire-section ul {
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+.hire-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hire-btn {
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.hire-btn:hover {
+  background: #2f5fd6;
+  transform: translateY(-2px);
+}
+
+/* CONTACT */
+.hire-contact {
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+  color: var(--muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .hire-card {
+    padding: 22px;
+  }
+
+  .hire-buttons {
+    flex-direction: column;
+  }
+
+  .hire-btn {
+    text-align: center;
+  }
+}
